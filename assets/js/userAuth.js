@@ -33,10 +33,10 @@ loginBtn.addEventListener('click',(e) => {
                showLoginInfo()
           }
           else if(loginEmailvalue !== allSignupDetails[0]){
-               alert('Email is incorrect')
+               alert('incorrect email')
           }
           else if(loginpasswordvalue !== allSignupDetails[1]){
-               alert('Password is incorrect')
+               alert('incorrect password')
           }
      }
 })
