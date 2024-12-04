@@ -1,0 +1,323 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: netR;
+}
+
+@font-face {
+     font-family: netM;
+     src: url(../fonts/NetflixSans_W_Md.woff2);
+}
+
+@font-face {
+     font-family: netR;
+     src: url(../fonts/NetflixSans_W_Rg.woff2);
+}
+
+:root{
+     --primary:#4335A7;
+     --black:#100C08;
+     --white-light:#DBD8E3;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #fff;
+}
+
+h1{
+     font-family: netM;
+     font-weight: 500;
+     font-size: 1.4rem;
+}
+
+a{
+     display: inline-block;
+     text-decoration: none;
+}
+
+span{
+     font-size: 16px;
+}
+
+p{
+     font-size: 16px;
+}
+
+.flex{
+     display: flex;
+}
+
+nav{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 14px 50px;
+     background: #fff;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid #ddd;
+     z-index: 1;
+}
+
+.logo > .main__logo{
+     color: var(--primary);
+}
+
+.logo > .main__logo i{
+     vertical-align: middle;
+}
+
+.btns button{
+     padding: 12px 22px;
+     font-size: 17px;
+     outline: none;
+     border: 0;
+     margin: 0 5px;
+     background: var(--primary);
+     color: #fff;
+     border-radius: 5px;
+     cursor: pointer;
+}
+
+#login-btn{
+     display: none;
+}
+
+#login-btn.active-login-btn{
+     display: block;
+}
+
+.user-profile-section{
+     position: relative;
+     display: none;
+}
+
+.remove-sign-up-btn{
+     display: none;
+}
+
+.active-user-profile-section{
+     display: block;
+}
+
+.user-icon{
+     padding: 13px 15px;
+     border-radius: 50%;
+     cursor: pointer;
+     background: var(--primary);
+}
+
+.user-icon i{
+     font-size: 18px;
+     color: #fff;
+}
+
+.user-info-section{
+     width: 200px;
+     position: fixed;
+     top: 80px;
+     right: 30px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     padding: 15px;
+     background: #fff;
+     box-shadow:  0 3px 5px rgba(0,0,0,0.1);
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .50s , visibility .50s;
+}
+
+.active-user-info{
+     opacity: 1;
+     visibility: visible;
+}
+
+.line{
+     width: 100%;
+     height: 0.6px;
+     background: #ddd;
+}
+
+.user-info-section span{
+     color: var(--black);
+     user-select: none;
+}
+
+
+.user-info-section a{
+     color: var(--black);
+     transition: all .3s;
+}
+
+.user-info-section a:hover{
+     color: var(--primary);
+}
+
+.user-info-section i{
+     margin-left: 3px;
+}
+
+/* FORM */
+
+#sign-up-form{
+     width: 350px;
+     max-width: 93%;
+     height: auto;
+     padding: 20px 25px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     text-align: center;
+     border-radius: 10px;
+     box-shadow:  0 3px 5px rgba(0,0,0,0.1);
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .50s , visibility .50s;
+}
+
+#sign-up-form.active-sign-up-form{
+     opacity: 1;
+     visibility: visible;
+}
+
+.remove-sign-up-form{
+     display: none;
+}
+
+.heading h1{
+     font-size: 2rem;
+     color: var(--primary);
+}
+
+.inputs{
+     width: 100%;
+     height: auto;
+}
+
+.inputs input{
+     width: 100%;
+     height: 50px;
+     margin-top: 10px;
+     padding: 0 13px;
+     outline: none;
+     border: 1px solid #ddd;
+     font-size: 17px;
+     border-radius: 5px;
+}
+
+.sign-btn-container{
+     width: 100%;
+     margin-bottom: 15px;
+}
+
+.sign-btn-container button{
+     width: 100%;
+     height: 50px;
+     font-size: 17px;
+     border-radius: 5px;
+     outline: none;
+     border: 0;
+     background: var(--primary);
+     color: #fff;
+     cursor: pointer;
+}
+
+#login-form{
+     width: 350px;
+     max-width: 93%;
+     height: auto;
+     padding: 20px 25px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     text-align: center;
+     border-radius: 10px;
+     box-shadow:  0 3px 5px rgba(0,0,0,0.1);
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .50s , visibility .50s;
+}
+
+#login-form.active-login-form{
+     opacity: 1;
+     visibility: visible;
+}
+
+.login-btn-container{
+     width: 100%;
+     margin-bottom: 15px;
+}
+
+.login-btn-container button{
+     width: 100%;
+     height: 50px;
+     font-size: 16px;
+     border-radius: 5px;
+     outline: none;
+     border: 0;
+     background: var(--primary);
+     color: #fff;
+     cursor: pointer;
+}
+
+.remove-login-form{
+     display: none;
+}
+
+.remove-login-btn{
+     display: none;
+}
+
+#name-heading{
+     font-size: 2.5rem;
+     font-weight: 600;
+     color: var(--primary);
+     text-align: center;
+     padding: 0 10px;
+     user-select: none;
+}
+
+#user-name{
+     text-transform: capitalize;
+}
+
+@media (max-width:500px){
+     nav{
+          padding: 12px 15px;
+     }
+
+     .user-info-section{
+          top: 80px;
+          right: 20px;
+     }
+
+     #name-heading{
+          font-size: 2rem;
+     }
+
+     .logo > .main__logo{
+          font-size: 1.4rem;
+     }
+}

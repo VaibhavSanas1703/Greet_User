@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/style/style.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css' integrity='sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==' crossorigin='anonymous'/>
+     <title>Login System in Websites | Vaibhav Sanas</title>
+</head>
+<body>
+
+     <h1 id="name-heading">
+          
+     </h1>
+     
+    <nav class="navbar flex">
+     <div class="logo">
+          <h1 class="main__logo">Bugcode <i class="fa-solid fa-code"></i></h1>
+     </div>
+
+     <div class="btns">
+          <button id="sign-up-btn">Sign up</button>
+          <button id="login-btn">Login</button>
+     </div>
+
+     <div class="user-profile-section">
+          <div class="user-icon">
+               <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="user-info-section">
+               <span id="username-display"></span>
+               <div class="line"></div>
+               <a href="#" id="editProfile">Edit Profile <i class="fa-regular fa-pen-to-square"></i></a>
+               <div class="line"></div>
+               <a href="#" id="logOut">Log out <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+          </div>
+     </div>
+    </nav>
+
+
+    <form id="sign-up-form">
+     <div class="heading">
+          <h1>Sign up</h1>
+     </div>
+     <div class="inputs">
+          <input type="email" id="user-email" placeholder="Email" required autocomplete="on">
+          <input type="password" id="user-password" placeholder="Create Password" required autocomplete="on">
+     </div>
+     <div class="line"></div>
+     <div class="sign-btn-container">
+          <button type="submit" id="signupBtn">Sign up</button>
+     </div>
+    </form>
+
+    <form id="login-form">
+     <div class="heading">
+          <h1>Login</h1>
+     </div>
+     <div class="inputs">
+          <input type="text" id="user-name" placeholder="Name" required autocomplete="off">
+          <input type="email" id="login-user-email" placeholder="Email" required autocomplete="on">
+          <input type="password" id="login-user-password" placeholder="Password" required autocomplete="on">
+     </div>
+     <div class="line"></div>
+     <div class="login-btn-container">
+          <button type="submit" id="loginBtn">Login</button>
+     </div>
+    </form>
+
+     <script src="./assets/js/app.js" defer></script>
+     <script src="./assets/js/userAuth.js" defer></script>
+</body>
+</html>
