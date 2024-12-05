@@ -1,0 +1,7 @@
+localStorage.setItem('userSignup','YES')
+          localStorage.setItem('userSignupDetails',JSON.stringify([email,password]))
+          setTimeout(() => {
+               let userEmailMsg = JSON.parse(localStorage.getItem('userSignupDetails'))
+               alert(`Hey ${userEmailMsg[0]}, Welcome to Bugcode website. Please login your account!`)
+               location.reload()
+          }, 600);

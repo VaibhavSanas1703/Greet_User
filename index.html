@@ -25,7 +25,7 @@
 
      <div class="user-profile-section">
           <div class="user-icon">
-               <i class="fa-regular fa-user"></i>
+               <img src="" alt="" id="user-image">
           </div>
           <div class="user-info-section">
                <span id="username-display"></span>
@@ -45,12 +45,14 @@
      <div class="inputs">
           <input type="email" id="user-email" placeholder="Email" required autocomplete="on">
           <input type="password" id="user-password" placeholder="Create Password" required autocomplete="on">
+          <p>Upload Profile Picture</p>
+          <input type="file" id="profile-image" accept=".jpg,.jpeg,.png" required>
      </div>
      <div class="line"></div>
      <div class="sign-btn-container">
           <button type="submit" id="signupBtn">Sign up</button>
      </div>
-    </form>
+</form>
 
     <form id="login-form">
      <div class="heading">
@@ -60,6 +62,7 @@
           <input type="text" id="user-name" placeholder="Name" required autocomplete="off">
           <input type="email" id="login-user-email" placeholder="Email" required autocomplete="on">
           <input type="password" id="login-user-password" placeholder="Password" required autocomplete="on">
+          <a href="#" id="forgotPass">Forgot your password?</a>
      </div>
      <div class="line"></div>
      <div class="login-btn-container">

@@ -14,11 +14,21 @@ const editProfile = document.getElementById('editProfile');
 
 let userLogin = false;
 
+forgotPass.addEventListener('click',() => {
+     let updatepass = prompt('Enter your new password');
+     if(updatepass){
+          localStorage.setItem('userSignupDetails',JSON.stringify([allSignupDetails[0],updatepass]))
+          alert('Your password has been changed! please re-login your account?')
+          location.reload()
+     }
+})
+
 function getSignupDatafromLS(){
      return JSON.parse(localStorage.getItem('userSignupDetails'));
 }
 
 let allSignupDetails = getSignupDatafromLS();
+
 
 loginBtn.addEventListener('click',(e) => {
      e.preventDefault();
