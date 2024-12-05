@@ -180,8 +180,20 @@ nav{
 }
 
 #profile-image{
-     height: auto;
-     border: 0;
+     height: 50px;
+     border: 1px;
+     display: none;
+     font-size: 30px;
+}
+
+.inputs{
+     display: block;
+     gap: 10px;
+}
+
+.inputs label{
+     font-size: 16px;
+     letter-spacing: 0.2px;
 }
 
 .inputs label{
@@ -194,6 +206,10 @@ nav{
 
 .input a{
      color: var(--primary);
+}
+
+.inputs input{
+     margin: 0;
 }
 
 /* FORM */
@@ -345,7 +361,7 @@ nav{
      }
 
      .user-info-section{
-          top: 80px;
+          top: 100px;
           right: 20px;
      }
 
