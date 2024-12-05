@@ -356,4 +356,9 @@ nav{
      .logo > .main__logo{
           font-size: 1.4rem;
      }
+
+     .user-icon{
+          width: 65px;
+          height: 65px;
+     }
 }
