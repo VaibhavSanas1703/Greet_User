@@ -120,6 +120,8 @@ nav{
      height: 100%;
      padding: 3px;
      border: 1px solid #ddd;
+     object-fit: cover;
+     object-position: center;
      border-radius: 50%;
 }
 
